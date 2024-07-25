@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/about.png</file>
+        <file>images/aboutIcon.png</file>
+        <file>images/aboutQtIcon.png</file>
+        <file>images/circle.png</file>
+        <file>images/close.png</file>
+        <file>images/copyIcon.png</file>
+        <file>images/cutIcon.png</file>
+        <file>images/eraser.png</file>
+        <file>images/open.png</file>
+        <file>images/pasteIcon.png</file>
+        <file>images/pen.png</file>
+        <file>images/quitIcon.png</file>
+        <file>images/rectangle.png</file>
+        <file>images/redoIcon.png</file>
+        <file>images/save.png</file>
+        <file>images/undoIcon.png</file>
+        <file>images/star.png</file>
+    </qresource>
+</RCC>

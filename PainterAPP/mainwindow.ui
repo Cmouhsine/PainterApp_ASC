@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>684</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>950</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionAjouter_Image"/>
+    <addaction name="actionQuitter"/>
+    <addaction name="actionSauvegarder"/>
+    <addaction name="actionCharger"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>A propos</string>
+    </property>
+    <addaction name="actionProgrammeurs"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAjouter_Image">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/open.png</normaloff>:/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ajouter Image</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/quitIcon.png</normaloff>:/images/quitIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionSauvegarder">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/save.png</normaloff>:/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sauvegarder</string>
+   </property>
+  </action>
+  <action name="actionCharger">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/open.png</normaloff>:/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Charger</string>
+   </property>
+  </action>
+  <action name="actionProgrammeurs">
+   <property name="text">
+    <string>Programmeurs</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
