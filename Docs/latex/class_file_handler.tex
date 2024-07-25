@@ -1,0 +1,181 @@
+\doxysection{File\+Handler Class Reference}
+\hypertarget{class_file_handler}{}\label{class_file_handler}\index{FileHandler@{FileHandler}}
+
+
+The \doxylink{class_file_handler}{File\+Handler} class provides functionality to handle file operations such as opening, reading, writing, and saving files.  
+
+
+
+
+{\ttfamily \#include $<$filehandler.\+h$>$}
+
+Inheritance diagram for File\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_file_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_file_handler_ab57f55728b2a06fa76d377c002522bce}{File\+Handler}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_file_handler}{File\+Handler} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_file_handler_a5c1b106108774396b2c1afb968fa840b}{open\+File}} (const QString \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Opens a file with the given file name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_file_handler_a5c40f714a9bbb3b4d9fdaba5bfb0a216}{save\+File}} (const QString \&file\+Name, const QString \&content)
+\begin{DoxyCompactList}\small\item\em Saves content to a file with the given file name. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_file_handler_a05679f2ccecea345dfa582b5b5fd2fa2}{read\+File}} ()
+\begin{DoxyCompactList}\small\item\em Reads the content of the opened file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_file_handler_ad23bd9dc9d0fe7657b2ed73361e52776}{write\+File}} (const QString \&content)
+\begin{DoxyCompactList}\small\item\em Writes content to the opened file. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_file_handler_ab0b3a9a8c696f962925058dc87c4ac38}{get\+Open\+File\+Name}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr, const QString \&caption=QString(), const QString \&dir=QString(), const QString \&filter=QString())
+\begin{DoxyCompactList}\small\item\em Gets the file name for opening a file using a file dialog. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_file_handler_a60f0a3b586a1384cf03bc37c48de8d87}{get\+Save\+File\+Name}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr, const QString \&caption=QString(), const QString \&dir=QString(), const QString \&filter=QString())
+\begin{DoxyCompactList}\small\item\em Gets the file name for saving a file using a file dialog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_file_handler}{File\+Handler} class provides functionality to handle file operations such as opening, reading, writing, and saving files. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_file_handler_ab57f55728b2a06fa76d377c002522bce}\index{FileHandler@{FileHandler}!FileHandler@{FileHandler}}
+\index{FileHandler@{FileHandler}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{FileHandler()}{FileHandler()}}
+{\footnotesize\ttfamily \label{class_file_handler_ab57f55728b2a06fa76d377c002522bce} 
+File\+Handler\+::\+File\+Handler (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_file_handler}{File\+Handler} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent QObject. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_file_handler_ab0b3a9a8c696f962925058dc87c4ac38}\index{FileHandler@{FileHandler}!getOpenFileName@{getOpenFileName}}
+\index{getOpenFileName@{getOpenFileName}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{getOpenFileName()}{getOpenFileName()}}
+{\footnotesize\ttfamily \label{class_file_handler_ab0b3a9a8c696f962925058dc87c4ac38} 
+QString File\+Handler\+::get\+Open\+File\+Name (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}, }\item[{const QString \&}]{caption}{ = {\ttfamily QString()}, }\item[{const QString \&}]{dir}{ = {\ttfamily QString()}, }\item[{const QString \&}]{filter}{ = {\ttfamily QString()}}\end{DoxyParamCaption})}
+
+
+
+Gets the file name for opening a file using a file dialog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget. \\
+\hline
+{\em caption} & The caption of the file dialog. \\
+\hline
+{\em dir} & The initial directory of the file dialog. \\
+\hline
+{\em filter} & The file filter for the file dialog. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The selected file name as a QString. 
+\end{DoxyReturn}
+\Hypertarget{class_file_handler_a60f0a3b586a1384cf03bc37c48de8d87}\index{FileHandler@{FileHandler}!getSaveFileName@{getSaveFileName}}
+\index{getSaveFileName@{getSaveFileName}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{getSaveFileName()}{getSaveFileName()}}
+{\footnotesize\ttfamily \label{class_file_handler_a60f0a3b586a1384cf03bc37c48de8d87} 
+QString File\+Handler\+::get\+Save\+File\+Name (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}, }\item[{const QString \&}]{caption}{ = {\ttfamily QString()}, }\item[{const QString \&}]{dir}{ = {\ttfamily QString()}, }\item[{const QString \&}]{filter}{ = {\ttfamily QString()}}\end{DoxyParamCaption})}
+
+
+
+Gets the file name for saving a file using a file dialog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget. \\
+\hline
+{\em caption} & The caption of the file dialog. \\
+\hline
+{\em dir} & The initial directory of the file dialog. \\
+\hline
+{\em filter} & The file filter for the file dialog. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The selected file name as a QString. 
+\end{DoxyReturn}
+\Hypertarget{class_file_handler_a5c1b106108774396b2c1afb968fa840b}\index{FileHandler@{FileHandler}!openFile@{openFile}}
+\index{openFile@{openFile}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{openFile()}{openFile()}}
+{\footnotesize\ttfamily \label{class_file_handler_a5c1b106108774396b2c1afb968fa840b} 
+bool File\+Handler\+::open\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Opens a file with the given file name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file to open. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the file is successfully opened, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_file_handler_a05679f2ccecea345dfa582b5b5fd2fa2}\index{FileHandler@{FileHandler}!readFile@{readFile}}
+\index{readFile@{readFile}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily \label{class_file_handler_a05679f2ccecea345dfa582b5b5fd2fa2} 
+QString File\+Handler\+::read\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reads the content of the opened file. 
+
+\begin{DoxyReturn}{Returns}
+The content of the file as a QString. 
+\end{DoxyReturn}
+\Hypertarget{class_file_handler_a5c40f714a9bbb3b4d9fdaba5bfb0a216}\index{FileHandler@{FileHandler}!saveFile@{saveFile}}
+\index{saveFile@{saveFile}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{saveFile()}{saveFile()}}
+{\footnotesize\ttfamily \label{class_file_handler_a5c40f714a9bbb3b4d9fdaba5bfb0a216} 
+bool File\+Handler\+::save\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Name}{, }\item[{const QString \&}]{content}{}\end{DoxyParamCaption})}
+
+
+
+Saves content to a file with the given file name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file to save. \\
+\hline
+{\em content} & The content to save to the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the file is successfully saved, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_file_handler_ad23bd9dc9d0fe7657b2ed73361e52776}\index{FileHandler@{FileHandler}!writeFile@{writeFile}}
+\index{writeFile@{writeFile}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{writeFile()}{writeFile()}}
+{\footnotesize\ttfamily \label{class_file_handler_ad23bd9dc9d0fe7657b2ed73361e52776} 
+bool File\+Handler\+::write\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{content}{}\end{DoxyParamCaption})}
+
+
+
+Writes content to the opened file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & The content to write to the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the content is successfully written, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Painter\+APP/\mbox{\hyperlink{filehandler_8h}{filehandler.\+h}}\item 
+Painter\+APP/\mbox{\hyperlink{filehandler_8cpp}{filehandler.\+cpp}}\end{DoxyCompactItemize}

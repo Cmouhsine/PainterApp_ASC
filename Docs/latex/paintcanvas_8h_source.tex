@@ -1,0 +1,208 @@
+\doxysection{paintcanvas.\+h}
+\hypertarget{paintcanvas_8h_source}{}\label{paintcanvas_8h_source}\index{PainterAPP/paintcanvas.h@{PainterAPP/paintcanvas.h}}
+\mbox{\hyperlink{paintcanvas_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ //\ \#ifndef\ PAINTCANVAS\_H}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ //\ \#define\ PAINTCANVAS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ //\ \#include\ <QWidget>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ //\ class\ PaintCanvas\ :\ public\ QWidget}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ //\ \{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ //\ \ \ \ \ Q\_OBJECT}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ //\ public:}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ //\ \ \ \ \ enum\ ToolType\ \{Pen,Rect,\ Ellipse,\ Eraser\};}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ //\ \ \ \ \ explicit\ PaintCanvas(QWidget\ *parent\ =\ nullptr);}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ //\ \ \ \ \ ToolType\ getTool()\ const;}}
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ //\ \ \ \ \ void\ setTool(const\ ToolType\ \&value);}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ //\ \ \ \ \ bool\ getFill()\ const;}}
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ //\ \ \ \ \ void\ setFill(bool\ value);}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ //\ \ \ \ \ int\ getPenWidth()\ const;}}
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ //\ \ \ \ \ void\ setPenWidth(int\ value);}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{comment}{//\ //\ \ \ \ \ QColor\ getFillColor()\ const;}}
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ //\ \ \ \ \ void\ setFillColor(const\ QColor\ \&value);}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ //\ \ \ \ \ QColor\ getPenColor()\ const;}}
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ //\ \ \ \ \ void\ setPenColor(const\ QColor\ \&value);}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{comment}{//\ //\ signals:}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{comment}{//\ //\ public\ slots:}}
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ //\ private:}}
+\DoxyCodeLine{00033\ \textcolor{comment}{//\ //\ \ \ \ \ void\ drawLineTo(const\ QPoint\ \&endPoint);}}
+\DoxyCodeLine{00034\ \textcolor{comment}{//\ //\ \ \ \ \ void\ drawRectTo(const\ QPoint\ \&\ endPoint\ ,bool\ elipse\ =\ false);}}
+\DoxyCodeLine{00035\ \textcolor{comment}{//\ //\ \ \ \ \ void\ eraseUnder(const\ QPoint\ \&\ topLeft);}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{comment}{//\ //\ \ \ \ \ void\ resizeImage(QImage\ *image,\ const\ QSize\ \&newSize);}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{comment}{//\ //\ \ \ \ \ ToolType\ tool;}}
+\DoxyCodeLine{00042\ \textcolor{comment}{//\ //\ \ \ \ \ bool\ fill;}}
+\DoxyCodeLine{00043\ \textcolor{comment}{//\ //\ \ \ \ \ bool\ drawing;}}
+\DoxyCodeLine{00044\ \textcolor{comment}{//\ //\ \ \ \ \ int\ penWidth;}}
+\DoxyCodeLine{00045\ \textcolor{comment}{//\ //\ \ \ \ \ QColor\ fillColor;}}
+\DoxyCodeLine{00046\ \textcolor{comment}{//\ //\ \ \ \ \ QColor\ penColor;}}
+\DoxyCodeLine{00047\ \textcolor{comment}{//\ //\ \ \ \ \ QPoint\ lastPoint;}}
+\DoxyCodeLine{00048\ \textcolor{comment}{//\ //\ \ \ \ \ QRectF\ lastRect;}}
+\DoxyCodeLine{00049\ \textcolor{comment}{//\ //\ \ \ \ \ QRectF\ lastEraserRect;}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{comment}{//\ //\ \ \ \ \ QImage\ image;}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{comment}{//\ //\ \ \ \ \ //\ QWidget\ interface}}
+\DoxyCodeLine{00055\ \textcolor{comment}{//\ //\ protected:}}
+\DoxyCodeLine{00056\ \textcolor{comment}{//\ //\ \ \ \ \ void\ mousePressEvent(QMouseEvent\ *event)\ override;}}
+\DoxyCodeLine{00057\ \textcolor{comment}{//\ //\ \ \ \ \ void\ mouseMoveEvent(QMouseEvent\ *event)\ override;}}
+\DoxyCodeLine{00058\ \textcolor{comment}{//\ //\ \ \ \ \ void\ mouseReleaseEvent(QMouseEvent\ *event)\ override;}}
+\DoxyCodeLine{00059\ \textcolor{comment}{//\ //\ \ \ \ \ void\ paintEvent(QPaintEvent\ *event)\ override;}}
+\DoxyCodeLine{00060\ \textcolor{comment}{//\ //\ \ \ \ \ void\ resizeEvent(QResizeEvent\ *event)\ override;}}
+\DoxyCodeLine{00061\ \textcolor{comment}{//\ //\ \};}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{comment}{//\ //\ \#endif\ //\ PAINTCANVAS\_H}}
+\DoxyCodeLine{00064\ \textcolor{comment}{//\ \#ifndef\ PAINTCANVAS\_H}}
+\DoxyCodeLine{00065\ \textcolor{comment}{//\ \#define\ PAINTCANVAS\_H}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{comment}{//\ \#include\ <QWidget>}}
+\DoxyCodeLine{00068\ \textcolor{comment}{//\ \#include\ <QImage>}}
+\DoxyCodeLine{00069\ \textcolor{comment}{//\ \#include\ <QColor>}}
+\DoxyCodeLine{00070\ \textcolor{comment}{//\ \#include\ <QStack>}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{comment}{//\ class\ PaintCanvas\ :\ public\ QWidget}}
+\DoxyCodeLine{00073\ \textcolor{comment}{//\ \{}}
+\DoxyCodeLine{00074\ \textcolor{comment}{//\ \ \ \ \ Q\_OBJECT}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{comment}{//\ public:}}
+\DoxyCodeLine{00077\ \textcolor{comment}{//\ \ \ \ \ enum\ ToolType\ \{\ Pen,\ Rect,\ Ellipse,\ Eraser\ \};}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{comment}{//\ \ \ \ \ explicit\ PaintCanvas(QWidget\ *parent\ =\ nullptr);}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{comment}{//\ \ \ \ \ ToolType\ getTool()\ const;}}
+\DoxyCodeLine{00082\ \textcolor{comment}{//\ \ \ \ \ void\ setTool(const\ ToolType\ \&value);}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{comment}{//\ \ \ \ \ bool\ getFill()\ const;}}
+\DoxyCodeLine{00085\ \textcolor{comment}{//\ \ \ \ \ void\ setFill(bool\ value);}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{comment}{//\ \ \ \ \ int\ getPenWidth()\ const;}}
+\DoxyCodeLine{00088\ \textcolor{comment}{//\ \ \ \ \ void\ setPenWidth(int\ value);}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{comment}{//\ \ \ \ \ QColor\ getFillColor()\ const;}}
+\DoxyCodeLine{00091\ \textcolor{comment}{//\ \ \ \ \ void\ setFillColor(const\ QColor\ \&value);}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{comment}{//\ \ \ \ \ QColor\ getPenColor()\ const;}}
+\DoxyCodeLine{00094\ \textcolor{comment}{//\ \ \ \ \ void\ setPenColor(const\ QColor\ \&value);}}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{comment}{//\ \ \ \ \ QImage\ getImage()\ const;\ \ //\ Add\ this\ method}}
+\DoxyCodeLine{00097\ \textcolor{comment}{//\ \ \ \ \ void\ setImage(const\ QImage\ \&newImage);\ \ //\ Add\ this\ method}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{comment}{//\ signals:}}
+\DoxyCodeLine{00100\ \textcolor{comment}{//\ \ \ \ \ void\ imageChanged();\ \ //\ Add\ this\ signal}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{comment}{//\ protected:}}
+\DoxyCodeLine{00103\ \textcolor{comment}{//\ \ \ \ \ void\ mousePressEvent(QMouseEvent\ *event)\ override;}}
+\DoxyCodeLine{00104\ \textcolor{comment}{//\ \ \ \ \ void\ mouseMoveEvent(QMouseEvent\ *event)\ override;}}
+\DoxyCodeLine{00105\ \textcolor{comment}{//\ \ \ \ \ void\ mouseReleaseEvent(QMouseEvent\ *event)\ override;}}
+\DoxyCodeLine{00106\ \textcolor{comment}{//\ \ \ \ \ void\ paintEvent(QPaintEvent\ *event)\ override;}}
+\DoxyCodeLine{00107\ \textcolor{comment}{//\ \ \ \ \ void\ resizeEvent(QResizeEvent\ *event)\ override;}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{comment}{//\ private:}}
+\DoxyCodeLine{00110\ \textcolor{comment}{//\ \ \ \ \ void\ drawLineTo(const\ QPoint\ \&endPoint);}}
+\DoxyCodeLine{00111\ \textcolor{comment}{//\ \ \ \ \ void\ drawRectTo(const\ QPoint\ \&endPoint,\ bool\ elipse\ =\ false);}}
+\DoxyCodeLine{00112\ \textcolor{comment}{//\ \ \ \ \ void\ eraseUnder(const\ QPoint\ \&topLeft);}}
+\DoxyCodeLine{00113\ \textcolor{comment}{//\ \ \ \ \ void\ resizeImage(QImage\ *image,\ const\ QSize\ \&newSize);}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{comment}{//\ \ \ \ \ ToolType\ tool;}}
+\DoxyCodeLine{00116\ \textcolor{comment}{//\ \ \ \ \ bool\ fill;}}
+\DoxyCodeLine{00117\ \textcolor{comment}{//\ \ \ \ \ bool\ drawing;}}
+\DoxyCodeLine{00118\ \textcolor{comment}{//\ \ \ \ \ int\ penWidth;}}
+\DoxyCodeLine{00119\ \textcolor{comment}{//\ \ \ \ \ QColor\ fillColor;}}
+\DoxyCodeLine{00120\ \textcolor{comment}{//\ \ \ \ \ QColor\ penColor;}}
+\DoxyCodeLine{00121\ \textcolor{comment}{//\ \ \ \ \ QPoint\ lastPoint;}}
+\DoxyCodeLine{00122\ \textcolor{comment}{//\ \ \ \ \ QRectF\ lastRect;}}
+\DoxyCodeLine{00123\ \textcolor{comment}{//\ \ \ \ \ QRectF\ lastEraserRect;}}
+\DoxyCodeLine{00124\ \textcolor{comment}{//\ \ \ \ \ QImage\ image;}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \textcolor{comment}{//\ \ \ \ \ QStack<QImage>\ undoStack;\ \ //\ Add\ this}}
+\DoxyCodeLine{00127\ \textcolor{comment}{//\ \ \ \ \ QStack<QImage>\ redoStack;\ \ //\ Add\ this}}
+\DoxyCodeLine{00128\ \textcolor{comment}{//\ \};}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{comment}{//\ \#endif\ //\ PAINTCANVAS\_H}}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\#ifndef\ PAINTCANVAS\_H}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#define\ PAINTCANVAS\_H}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#include\ <QImage>}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#include\ <QStack>}}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_paint_canvas}{PaintCanvas}}\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00141\ \{}
+\DoxyCodeLine{00142\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73}{ToolType}}\ \{\ \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73a5dd31eb655edd369fc4c9b061f86791b}{Pen}},\ \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73a19c01fe790ad15766ca0544e2aba8ebf}{Rect}},\ \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73ad253d9733c949a2504dd4a4c4554ddfc}{Ellipse}},\ \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73ab710a9e2a3c4db37ff8cedee4b027cc7}{Eraser}}\ \};}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_paint_canvas_adbd23097455f2a5241f881a5a9116a92}{PaintCanvas}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73}{ToolType}}\ \mbox{\hyperlink{class_paint_canvas_a5519c3ffc59bbb51b84f4b5050d39db2}{getTool}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_aa31056e4ad3c29be408a6eca504c3394}{setTool}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73}{ToolType}}\ \&value);}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_paint_canvas_acb578a8077c502cd4ad0d570048ec6d8}{getFill}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_a75af7a4deda70bd25665e05db7595553}{setFill}}(\textcolor{keywordtype}{bool}\ value);}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_paint_canvas_a26531d60e76a2964290e0cf3407aa0f9}{getPenWidth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_ae7abaac60fed8882b06f8c73c5c22caa}{setPenWidth}}(\textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ QColor\ \mbox{\hyperlink{class_paint_canvas_ad6cefd299517bc0c76c0215e0df491ec}{getFillColor}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_a76682a37f2e1cb5e0465c19af02d6e7b}{setFillColor}}(\textcolor{keyword}{const}\ QColor\ \&value);}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \ \ \ \ QColor\ \mbox{\hyperlink{class_paint_canvas_a67781b6309b4fef3b8a6b4528fdb4a9c}{getPenColor}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_a195efbfb2a813e4a02ea45cb0ae25577}{setPenColor}}(\textcolor{keyword}{const}\ QColor\ \&value);}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ QImage\ \mbox{\hyperlink{class_paint_canvas_adee2c97f04ec8253e303fc03892b0bfd}{getImage}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_aada5e03ad533a0cb93bcd01a119a48d4}{setImage}}(\textcolor{keyword}{const}\ QImage\ \&value);}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_abcbc8d43decc8745caf7774be208cee3}{undo}}();}
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_ac66bc29284fedb97ea249fe63ee73f5e}{redo}}();}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ signals:}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_a5d209c87f6d03dea0b683bb70de53796}{imageChanged}}();}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_ae0e9cb96bf28bbcf94d3043fa2ecb52a}{mousePressEvent}}(QMouseEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_a8c1b74022f7cbf76e387900804f77905}{mouseMoveEvent}}(QMouseEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_ad843bc948a8dcd99077733158333ee22}{mouseReleaseEvent}}(QMouseEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_a4fc764a80e384c7344e6e4e11a819a2b}{paintEvent}}(QPaintEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_canvas_ac0bde2a24649d268fddc80ce5b38ebae}{resizeEvent}}(QResizeEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00180\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keywordtype}{void}\ drawLineTo(\textcolor{keyword}{const}\ QPoint\ \&endPoint);}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordtype}{void}\ drawRectTo(\textcolor{keyword}{const}\ QPoint\ \&endPoint,\ \textcolor{keywordtype}{bool}\ ellipse\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keywordtype}{void}\ eraseUnder(\textcolor{keyword}{const}\ QPoint\ \&topLeft);}
+\DoxyCodeLine{00184\ \ \ \ \ \textcolor{keywordtype}{void}\ resizeImage(QImage\ *image,\ \textcolor{keyword}{const}\ QSize\ \&newSize);}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \ \ \ \ \textcolor{keywordtype}{void}\ saveStateForUndo();}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \ \ \ \ \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73}{ToolType}}\ tool;}
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{bool}\ fill;}
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordtype}{bool}\ drawing;}
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordtype}{int}\ penWidth;}
+\DoxyCodeLine{00192\ \ \ \ \ QColor\ fillColor;}
+\DoxyCodeLine{00193\ \ \ \ \ QColor\ penColor;}
+\DoxyCodeLine{00194\ \ \ \ \ QPoint\ lastPoint;}
+\DoxyCodeLine{00195\ \ \ \ \ QRectF\ lastRect;}
+\DoxyCodeLine{00196\ \ \ \ \ QRectF\ lastEraserRect;}
+\DoxyCodeLine{00197\ \ \ \ \ QImage\ image;}
+\DoxyCodeLine{00198\ \ \ \ \ QStack<QImage>\ undoStack;\ \ \textcolor{comment}{//\ Add\ this}}
+\DoxyCodeLine{00199\ \ \ \ \ QStack<QImage>\ redoStack;\ \ \textcolor{comment}{//\ Add\ this}}
+\DoxyCodeLine{00200\ \};}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PAINTCANVAS\_H}}
+
+\end{DoxyCode}

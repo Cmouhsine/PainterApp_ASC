@@ -1,0 +1,36 @@
+\doxysection{redoundo.\+h}
+\hypertarget{redoundo_8h_source}{}\label{redoundo_8h_source}\index{PainterAPP/redoundo.h@{PainterAPP/redoundo.h}}
+\mbox{\hyperlink{redoundo_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ REDOUNDO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ REDOUNDO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QStack>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QImage>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_redo_undo}{RedoUndo}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_redo_undo_acf1f01e9e9cfbcae08d0035fff92734c}{RedoUndo}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_redo_undo_a10ce82337244948d57f00488c92450cc}{addState}}(\textcolor{keyword}{const}\ QImage\ \&state);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ QImage\ \mbox{\hyperlink{class_redo_undo_a9b3a5b8afdf908f08d2032b2805a63f1}{undo}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ QImage\ \mbox{\hyperlink{class_redo_undo_a4715bbe2a79a1addda9389206e0ae858}{redo}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_redo_undo_a7cc3031aafc49624af3320ef6bf4f1ed}{canUndo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_redo_undo_a9093b9361ca432b666f6b4b2cfb3bbd4}{canRedo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00054\ \ \ \ \ QStack<QImage>\ undoStack;\ }
+\DoxyCodeLine{00055\ \ \ \ \ QStack<QImage>\ redoStack;\ }
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ REDOUNDO\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,129 @@
+\doxysection{Redo\+Undo Class Reference}
+\hypertarget{class_redo_undo}{}\label{class_redo_undo}\index{RedoUndo@{RedoUndo}}
+
+
+The \doxylink{class_redo_undo}{Redo\+Undo} class provides functionality for managing undo and redo operations for images.  
+
+
+
+
+{\ttfamily \#include $<$redoundo.\+h$>$}
+
+Inheritance diagram for Redo\+Undo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_redo_undo}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_redo_undo_acf1f01e9e9cfbcae08d0035fff92734c}{Redo\+Undo}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_redo_undo}{Redo\+Undo} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_redo_undo_a10ce82337244948d57f00488c92450cc}{add\+State}} (const QImage \&state)
+\begin{DoxyCompactList}\small\item\em Adds a new state to the undo stack. \end{DoxyCompactList}\item 
+QImage \mbox{\hyperlink{class_redo_undo_a9b3a5b8afdf908f08d2032b2805a63f1}{undo}} ()
+\begin{DoxyCompactList}\small\item\em Performs an undo operation. \end{DoxyCompactList}\item 
+QImage \mbox{\hyperlink{class_redo_undo_a4715bbe2a79a1addda9389206e0ae858}{redo}} ()
+\begin{DoxyCompactList}\small\item\em Performs a redo operation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_redo_undo_a7cc3031aafc49624af3320ef6bf4f1ed}{can\+Undo}} () const
+\begin{DoxyCompactList}\small\item\em Checks if an undo operation can be performed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_redo_undo_a9093b9361ca432b666f6b4b2cfb3bbd4}{can\+Redo}} () const
+\begin{DoxyCompactList}\small\item\em Checks if a redo operation can be performed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_redo_undo}{Redo\+Undo} class provides functionality for managing undo and redo operations for images. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_redo_undo_acf1f01e9e9cfbcae08d0035fff92734c}\index{RedoUndo@{RedoUndo}!RedoUndo@{RedoUndo}}
+\index{RedoUndo@{RedoUndo}!RedoUndo@{RedoUndo}}
+\doxysubsubsection{\texorpdfstring{RedoUndo()}{RedoUndo()}}
+{\footnotesize\ttfamily \label{class_redo_undo_acf1f01e9e9cfbcae08d0035fff92734c} 
+Redo\+Undo\+::\+Redo\+Undo (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_redo_undo}{Redo\+Undo} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent QObject. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_redo_undo_a10ce82337244948d57f00488c92450cc}\index{RedoUndo@{RedoUndo}!addState@{addState}}
+\index{addState@{addState}!RedoUndo@{RedoUndo}}
+\doxysubsubsection{\texorpdfstring{addState()}{addState()}}
+{\footnotesize\ttfamily \label{class_redo_undo_a10ce82337244948d57f00488c92450cc} 
+void Redo\+Undo\+::add\+State (\begin{DoxyParamCaption}\item[{const QImage \&}]{state}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new state to the undo stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The image state to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_redo_undo_a9093b9361ca432b666f6b4b2cfb3bbd4}\index{RedoUndo@{RedoUndo}!canRedo@{canRedo}}
+\index{canRedo@{canRedo}!RedoUndo@{RedoUndo}}
+\doxysubsubsection{\texorpdfstring{canRedo()}{canRedo()}}
+{\footnotesize\ttfamily \label{class_redo_undo_a9093b9361ca432b666f6b4b2cfb3bbd4} 
+bool Redo\+Undo\+::can\+Redo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if a redo operation can be performed. 
+
+\begin{DoxyReturn}{Returns}
+true if redo is possible, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_redo_undo_a7cc3031aafc49624af3320ef6bf4f1ed}\index{RedoUndo@{RedoUndo}!canUndo@{canUndo}}
+\index{canUndo@{canUndo}!RedoUndo@{RedoUndo}}
+\doxysubsubsection{\texorpdfstring{canUndo()}{canUndo()}}
+{\footnotesize\ttfamily \label{class_redo_undo_a7cc3031aafc49624af3320ef6bf4f1ed} 
+bool Redo\+Undo\+::can\+Undo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if an undo operation can be performed. 
+
+\begin{DoxyReturn}{Returns}
+true if undo is possible, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_redo_undo_a4715bbe2a79a1addda9389206e0ae858}\index{RedoUndo@{RedoUndo}!redo@{redo}}
+\index{redo@{redo}!RedoUndo@{RedoUndo}}
+\doxysubsubsection{\texorpdfstring{redo()}{redo()}}
+{\footnotesize\ttfamily \label{class_redo_undo_a4715bbe2a79a1addda9389206e0ae858} 
+QImage Redo\+Undo\+::redo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Performs a redo operation. 
+
+\begin{DoxyReturn}{Returns}
+The next image state if available, otherwise an empty QImage. 
+\end{DoxyReturn}
+\Hypertarget{class_redo_undo_a9b3a5b8afdf908f08d2032b2805a63f1}\index{RedoUndo@{RedoUndo}!undo@{undo}}
+\index{undo@{undo}!RedoUndo@{RedoUndo}}
+\doxysubsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily \label{class_redo_undo_a9b3a5b8afdf908f08d2032b2805a63f1} 
+QImage Redo\+Undo\+::undo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Performs an undo operation. 
+
+\begin{DoxyReturn}{Returns}
+The previous image state if available, otherwise an empty QImage. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Painter\+APP/\mbox{\hyperlink{redoundo_8h}{redoundo.\+h}}\item 
+Painter\+APP/\mbox{\hyperlink{redoundo_8cpp}{redoundo.\+cpp}}\end{DoxyCompactItemize}

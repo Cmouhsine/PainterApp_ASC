@@ -1,0 +1,39 @@
+\doxysection{filehandler.\+h}
+\hypertarget{filehandler_8h_source}{}\label{filehandler_8h_source}\index{PainterAPP/filehandler.h@{PainterAPP/filehandler.h}}
+\mbox{\hyperlink{filehandler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FILEHANDLER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FILEHANDLER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QFile>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QTextStream>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QFileDialog>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_file_handler}{FileHandler}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_file_handler_ab57f55728b2a06fa76d377c002522bce}{FileHandler}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_file_handler_a5c1b106108774396b2c1afb968fa840b}{openFile}}(\textcolor{keyword}{const}\ QString\ \&fileName);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_file_handler_a5c40f714a9bbb3b4d9fdaba5bfb0a216}{saveFile}}(\textcolor{keyword}{const}\ QString\ \&fileName,\ \textcolor{keyword}{const}\ QString\ \&content);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ QString\ \mbox{\hyperlink{class_file_handler_a05679f2ccecea345dfa582b5b5fd2fa2}{readFile}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_file_handler_ad23bd9dc9d0fe7657b2ed73361e52776}{writeFile}}(\textcolor{keyword}{const}\ QString\ \&content);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00061\ \ \ \ \ QString\ \mbox{\hyperlink{class_file_handler_ab0b3a9a8c696f962925058dc87c4ac38}{getOpenFileName}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr},\ \textcolor{keyword}{const}\ QString\ \&caption\ =\ QString(),\ \textcolor{keyword}{const}\ QString\ \&dir\ =\ QString(),\ \textcolor{keyword}{const}\ QString\ \&filter\ =\ QString());}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00071\ \ \ \ \ QString\ \mbox{\hyperlink{class_file_handler_a60f0a3b586a1384cf03bc37c48de8d87}{getSaveFileName}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr},\ \textcolor{keyword}{const}\ QString\ \&caption\ =\ QString(),\ \textcolor{keyword}{const}\ QString\ \&dir\ =\ QString(),\ \textcolor{keyword}{const}\ QString\ \&filter\ =\ QString());}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00074\ \ \ \ \ QFile\ file;\ }
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FILEHANDLER\_H}}
+
+\end{DoxyCode}
