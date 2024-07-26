@@ -63,11 +63,11 @@ master
 ![save](screenshot/save file.png)
 7- Pen Color  
 ![pen](screenshot/pen color.png)
-7- fill color  
+8- fill color  
 ![fill](screenshot/fill color.png)
-8- free draw  
+9- free draw  
 ![free](screenshot/Draw in canvas.png)
-9- about  
+10- about  
 ![about](screenshot/about.png)
 
 ### Comment Exécuter le Projet
@@ -78,7 +78,7 @@ master
 5. Exécutez le projet
 
 ### Équipe
-Projet sur QT et C++ - Projet de la classe de structures de données créé par :
+Projet sur QT et C++ -  créé par :
 
 - [Soufiani]
 - [Djamel]
