@@ -28,9 +28,7 @@ The project is built using:
 Qt Version: 6.15.2
 - Frontend:
   - Qt C++
-  - Qt Designer
   - Qt Creator
-  - CSS
 - Backend:
   - C++
   - Qt Creator
@@ -46,6 +44,8 @@ master
 
 ### Quick Preview
 1- Application Review
+ ![UML](UML.png)
+2- Application Review
  ![APP](PainterAPP.png)
 
 
