@@ -2,6 +2,10 @@
 #include <QPainter>
 #include <QMouseEvent>
 
+/**
+ * @brief Constructs a new PaintCanvas object.
+ * @param parent The parent widget.
+ */
 PaintCanvas::PaintCanvas(QWidget *parent) : QWidget(parent),
     tool(Pen),
     fill(false),
@@ -9,68 +13,116 @@ PaintCanvas::PaintCanvas(QWidget *parent) : QWidget(parent),
     penWidth(1),
     fillColor(Qt::blue),
     penColor(Qt::black),
-    lastRect(QRectF(0,0,0,0)),
-    lastEraserRect(QRectF(0,0,0,0))
+    lastRect(QRectF(0, 0, 0, 0)),
+    lastEraserRect(QRectF(0, 0, 0, 0))
 {
     image = QImage(400, 400, QImage::Format_RGB32);  // Initialize the image
     image.fill(Qt::white);  // Fill the image with white color
 }
 
+/**
+ * @brief Gets the current tool type.
+ * @return The current tool type.
+ */
 PaintCanvas::ToolType PaintCanvas::getTool() const
 {
     return tool;
 }
 
+/**
+ * @brief Sets the tool type.
+ * @param value The new tool type.
+ */
 void PaintCanvas::setTool(const ToolType &value)
 {
     tool = value;
 }
 
+/**
+ * @brief Gets the fill property.
+ * @return The fill property.
+ */
 bool PaintCanvas::getFill() const
 {
     return fill;
 }
 
+/**
+ * @brief Sets the fill property.
+ * @param value The new fill property.
+ */
 void PaintCanvas::setFill(bool value)
 {
     fill = value;
 }
 
+/**
+ * @brief Gets the pen width.
+ * @return The pen width.
+ */
 int PaintCanvas::getPenWidth() const
 {
     return penWidth;
 }
 
+/**
+ * @brief Sets the pen width.
+ * @param value The new pen width.
+ */
 void PaintCanvas::setPenWidth(int value)
 {
     penWidth = value;
 }
 
+/**
+ * @brief Gets the fill color.
+ * @return The fill color.
+ */
 QColor PaintCanvas::getFillColor() const
 {
     return fillColor;
 }
 
+/**
+ * @brief Sets the fill color.
+ * @param value The new fill color.
+ */
 void PaintCanvas::setFillColor(const QColor &value)
 {
     fillColor = value;
 }
 
+/**
+ * @brief Gets the pen color.
+ * @return The pen color.
+ */
 QColor PaintCanvas::getPenColor() const
 {
     return penColor;
 }
 
+/**
+ * @brief Sets the pen color.
+ * @param value The new pen color.
+ */
 void PaintCanvas::setPenColor(const QColor &value)
 {
     penColor = value;
 }
 
+/**
+ * @brief Gets the image.
+ * @return The image.
+ */
 QImage PaintCanvas::getImage() const
 {
     return image;
 }
 
+/**
+ * @brief Sets the image.
+ * @param newImage The new image.
+ */
 void PaintCanvas::setImage(const QImage &newImage)
 {
     image = newImage;
@@ -78,6 +130,10 @@ void PaintCanvas::setImage(const QImage &newImage)
     emit imageChanged();  // Emit signal whenever the image is set
 }
 
+/**
+ * @brief Draws a line to the specified end point.
+ * @param endPoint The end point of the line.
+ */
 void PaintCanvas::drawLineTo(const QPoint &endPoint)
 {
     QPainter painter(&image);
@@ -90,6 +146,11 @@ void PaintCanvas::drawLineTo(const QPoint &endPoint)
     emit imageChanged();  // Emit signal when the image changes
 }
 
+/**
+ * @brief Draws a rectangle or ellipse to the specified end point.
+ * @param endPoint The end point of the shape.
+ * @param elipse Whether to draw an ellipse instead of a rectangle.
+ */
 void PaintCanvas::drawRectTo(const QPoint &endPoint, bool elipse)
 {
     QPainter painter(&image);
@@ -127,6 +188,10 @@ void PaintCanvas::drawRectTo(const QPoint &endPoint, bool elipse)
     emit imageChanged();  // Emit signal when the image changes
 }
 
+/**
+ * @brief Erases the area under the specified top-left point.
+ * @param topLeft The top-left point of the eraser.
+ */
 void PaintCanvas::eraseUnder(const QPoint &topLeft)
 {
     QPainter painter(&image);
@@ -154,6 +219,11 @@ void PaintCanvas::eraseUnder(const QPoint &topLeft)
     emit imageChanged();  // Emit signal when the image changes
 }
 
+/**
+ * @brief Resizes the image to the specified size.
+ * @param image The image to resize.
+ * @param newSize The new size.
+ */
 void PaintCanvas::resizeImage(QImage *image, const QSize &newSize)
 {
     if (image->size() == newSize)
@@ -167,6 +237,10 @@ void PaintCanvas::resizeImage(QImage *image, const QSize &newSize)
     emit imageChanged();  // Emit signal when the image changes
 }
 
+/**
+ * @brief Handles mouse press events.
+ * @param event The mouse event.
+ */
 void PaintCanvas::mousePressEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton) {
@@ -175,6 +249,10 @@ void PaintCanvas::mousePressEvent(QMouseEvent *event)
     }
 }
 
+/**
+ * @brief Handles mouse move events.
+ * @param event The mouse event.
+ */
 void PaintCanvas::mouseMoveEvent(QMouseEvent *event)
 {
     if ((event->buttons() & Qt::LeftButton) && drawing) {
@@ -190,6 +268,10 @@ void PaintCanvas::mouseMoveEvent(QMouseEvent *event)
     }
 }
 
+/**
+ * @brief Handles mouse release events.
+ * @param event The mouse event.
+ */
 void PaintCanvas::mouseReleaseEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton && drawing) {
@@ -207,6 +289,10 @@ void PaintCanvas::mouseReleaseEvent(QMouseEvent *event)
     }
 }
 
+/**
+ * @brief Paints the widget.
+ * @param event The paint event.
+ */
 void PaintCanvas::paintEvent(QPaintEvent *event)
 {
     QPainter painter(this);
@@ -214,6 +300,10 @@ void PaintCanvas::paintEvent(QPaintEvent *event)
     painter.drawImage(rectToDraw, image, rectToDraw);
 }
 
+/**
+ * @brief Handles resize events.
+ * @param event The resize event.
+ */
 void PaintCanvas::resizeEvent(QResizeEvent *event)
 {
     if (width() > image.width() || height() > image.height()) {
@@ -224,4 +314,3 @@ void PaintCanvas::resizeEvent(QResizeEvent *event)
     }
     QWidget::resizeEvent(event);
 }
-
