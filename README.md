@@ -32,8 +32,8 @@ Version de Qt : 6.15.2
 - Backend :
   - C++
   - Qt Creator
-
-master
+```
+main
 ├─  Docs (doxygen)
 ├─  PainterAPP
 ├─  screenshot
@@ -46,8 +46,7 @@ master
 ├─  Doxyfile
 ├─  README.md
 └─  .gitignore
-
-
+```
 ### Aperçu Rapide
 1- Classe  Diagram
 ![UML](UML.png)
