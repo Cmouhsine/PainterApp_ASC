@@ -2,6 +2,11 @@
 \hypertarget{class_paint_canvas}{}\label{class_paint_canvas}\index{PaintCanvas@{PaintCanvas}}
 
 
+The \doxylink{class_paint_canvas}{Paint\+Canvas} class represents a widget for painting.  
+
+
+
+
 {\ttfamily \#include $<$paintcanvas.\+h$>$}
 
 Inheritance diagram for Paint\+Canvas\+:\begin{figure}[H]
@@ -18,59 +23,62 @@ enum \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73}{Tool
 , \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73ad253d9733c949a2504dd4a4c4554ddfc}{Ellipse}}
 , \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73ab710a9e2a3c4db37ff8cedee4b027cc7}{Eraser}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Enum representing different tool types. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_paint_canvas_a5d209c87f6d03dea0b683bb70de53796}{image\+Changed}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Signal emitted when the image changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_paint_canvas_adbd23097455f2a5241f881a5a9116a92}{Paint\+Canvas}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_paint_canvas}{Paint\+Canvas} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73}{Tool\+Type}} \mbox{\hyperlink{class_paint_canvas_a5519c3ffc59bbb51b84f4b5050d39db2}{get\+Tool}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the current tool. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_aa31056e4ad3c29be408a6eca504c3394}{set\+Tool}} (const \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73}{Tool\+Type}} \&value)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the current tool. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_paint_canvas_acb578a8077c502cd4ad0d570048ec6d8}{get\+Fill}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the fill property. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_a75af7a4deda70bd25665e05db7595553}{set\+Fill}} (bool value)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the fill property. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_paint_canvas_a26531d60e76a2964290e0cf3407aa0f9}{get\+Pen\+Width}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the pen width. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_ae7abaac60fed8882b06f8c73c5c22caa}{set\+Pen\+Width}} (int value)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the pen width. \end{DoxyCompactList}\item 
 QColor \mbox{\hyperlink{class_paint_canvas_ad6cefd299517bc0c76c0215e0df491ec}{get\+Fill\+Color}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the fill color. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_a76682a37f2e1cb5e0465c19af02d6e7b}{set\+Fill\+Color}} (const QColor \&value)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the fill color. \end{DoxyCompactList}\item 
 QColor \mbox{\hyperlink{class_paint_canvas_a67781b6309b4fef3b8a6b4528fdb4a9c}{get\+Pen\+Color}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the pen color. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_a195efbfb2a813e4a02ea45cb0ae25577}{set\+Pen\+Color}} (const QColor \&value)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the pen color. \end{DoxyCompactList}\item 
 QImage \mbox{\hyperlink{class_paint_canvas_adee2c97f04ec8253e303fc03892b0bfd}{get\+Image}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the current image. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_aada5e03ad533a0cb93bcd01a119a48d4}{set\+Image}} (const QImage \&value)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the current image. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_abcbc8d43decc8745caf7774be208cee3}{undo}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Undoes the last action. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_ac66bc29284fedb97ea249fe63ee73f5e}{redo}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Redoes the last undone action. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_paint_canvas_ae0e9cb96bf28bbcf94d3043fa2ecb52a}{mouse\+Press\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the mouse press event. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_a8c1b74022f7cbf76e387900804f77905}{mouse\+Move\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the mouse move event. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_ad843bc948a8dcd99077733158333ee22}{mouse\+Release\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the mouse release event. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_a4fc764a80e384c7344e6e4e11a819a2b}{paint\+Event}} (QPaint\+Event \texorpdfstring{$\ast$}{*}event) override
-\item 
+\begin{DoxyCompactList}\small\item\em Handles the paint event. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_paint_canvas_ac0bde2a24649d268fddc80ce5b38ebae}{resize\+Event}} (QResize\+Event \texorpdfstring{$\ast$}{*}event) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Handles the resize event. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_paint_canvas}{Paint\+Canvas} class represents a widget for painting. 
 
 \doxysubsection{Member Enumeration Documentation}
 \Hypertarget{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73}\index{PaintCanvas@{PaintCanvas}!ToolType@{ToolType}}
@@ -78,6 +86,10 @@ void \mbox{\hyperlink{class_paint_canvas_ac0bde2a24649d268fddc80ce5b38ebae}{resi
 \doxysubsubsection{\texorpdfstring{ToolType}{ToolType}}
 {\footnotesize\ttfamily \label{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73} 
 enum \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73}{Paint\+Canvas\+::\+Tool\+Type}}}
+
+
+
+Enum representing different tool types. 
 
 \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Pen@{Pen}!PaintCanvas@{PaintCanvas}}\index{PaintCanvas@{PaintCanvas}!Pen@{Pen}}}\Hypertarget{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73a5dd31eb655edd369fc4c9b061f86791b}\label{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73} 
@@ -108,6 +120,15 @@ Paint\+Canvas\+::\+Paint\+Canvas (\begin{DoxyParamCaption}\item[{QWidget \texorp
 
 
 
+Constructs a new \doxylink{class_paint_canvas}{Paint\+Canvas} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget. \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_paint_canvas_acb578a8077c502cd4ad0d570048ec6d8}\index{PaintCanvas@{PaintCanvas}!getFill@{getFill}}
 \index{getFill@{getFill}!PaintCanvas@{PaintCanvas}}
@@ -115,41 +136,97 @@ Paint\+Canvas\+::\+Paint\+Canvas (\begin{DoxyParamCaption}\item[{QWidget \texorp
 {\footnotesize\ttfamily \label{class_paint_canvas_acb578a8077c502cd4ad0d570048ec6d8} 
 bool Paint\+Canvas\+::get\+Fill (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
+
+
+Gets the fill property. 
+
+\begin{DoxyReturn}{Returns}
+True if fill is enabled, false otherwise.
+
+The fill property. 
+\end{DoxyReturn}
 \Hypertarget{class_paint_canvas_ad6cefd299517bc0c76c0215e0df491ec}\index{PaintCanvas@{PaintCanvas}!getFillColor@{getFillColor}}
 \index{getFillColor@{getFillColor}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{getFillColor()}{getFillColor()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_ad6cefd299517bc0c76c0215e0df491ec} 
 QColor Paint\+Canvas\+::get\+Fill\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
+
+
+Gets the fill color. 
+
+\begin{DoxyReturn}{Returns}
+The fill color. 
+\end{DoxyReturn}
 \Hypertarget{class_paint_canvas_adee2c97f04ec8253e303fc03892b0bfd}\index{PaintCanvas@{PaintCanvas}!getImage@{getImage}}
 \index{getImage@{getImage}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{getImage()}{getImage()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_adee2c97f04ec8253e303fc03892b0bfd} 
 QImage Paint\+Canvas\+::get\+Image (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
+
+
+Gets the current image. 
+
+Gets the image.
+
+\begin{DoxyReturn}{Returns}
+The current image.
+
+The image. 
+\end{DoxyReturn}
 \Hypertarget{class_paint_canvas_a67781b6309b4fef3b8a6b4528fdb4a9c}\index{PaintCanvas@{PaintCanvas}!getPenColor@{getPenColor}}
 \index{getPenColor@{getPenColor}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{getPenColor()}{getPenColor()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_a67781b6309b4fef3b8a6b4528fdb4a9c} 
 QColor Paint\+Canvas\+::get\+Pen\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
+
+
+Gets the pen color. 
+
+\begin{DoxyReturn}{Returns}
+The pen color. 
+\end{DoxyReturn}
 \Hypertarget{class_paint_canvas_a26531d60e76a2964290e0cf3407aa0f9}\index{PaintCanvas@{PaintCanvas}!getPenWidth@{getPenWidth}}
 \index{getPenWidth@{getPenWidth}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{getPenWidth()}{getPenWidth()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_a26531d60e76a2964290e0cf3407aa0f9} 
 int Paint\+Canvas\+::get\+Pen\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
+
+
+Gets the pen width. 
+
+\begin{DoxyReturn}{Returns}
+The pen width. 
+\end{DoxyReturn}
 \Hypertarget{class_paint_canvas_a5519c3ffc59bbb51b84f4b5050d39db2}\index{PaintCanvas@{PaintCanvas}!getTool@{getTool}}
 \index{getTool@{getTool}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{getTool()}{getTool()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_a5519c3ffc59bbb51b84f4b5050d39db2} 
 \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73}{Paint\+Canvas\+::\+Tool\+Type}} Paint\+Canvas\+::get\+Tool (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
+
+
+Gets the current tool. 
+
+Gets the current tool type.
+
+\begin{DoxyReturn}{Returns}
+The current tool.
+
+The current tool type. 
+\end{DoxyReturn}
 \Hypertarget{class_paint_canvas_a5d209c87f6d03dea0b683bb70de53796}\index{PaintCanvas@{PaintCanvas}!imageChanged@{imageChanged}}
 \index{imageChanged@{imageChanged}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{imageChanged}{imageChanged}}
 {\footnotesize\ttfamily \label{class_paint_canvas_a5d209c87f6d03dea0b683bb70de53796} 
 void Paint\+Canvas\+::image\+Changed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when the image changes. 
 
 \Hypertarget{class_paint_canvas_a8c1b74022f7cbf76e387900804f77905}\index{PaintCanvas@{PaintCanvas}!mouseMoveEvent@{mouseMoveEvent}}
 \index{mouseMoveEvent@{mouseMoveEvent}!PaintCanvas@{PaintCanvas}}
@@ -157,29 +234,83 @@ void Paint\+Canvas\+::image\+Changed (\begin{DoxyParamCaption}{}{}\end{DoxyParam
 {\footnotesize\ttfamily \label{class_paint_canvas_a8c1b74022f7cbf76e387900804f77905} 
 void Paint\+Canvas\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
 
+
+
+Handles the mouse move event. 
+
+Handles mouse move events.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The mouse move event.\\
+\hline
+{\em event} & The mouse event. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_paint_canvas_ae0e9cb96bf28bbcf94d3043fa2ecb52a}\index{PaintCanvas@{PaintCanvas}!mousePressEvent@{mousePressEvent}}
 \index{mousePressEvent@{mousePressEvent}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_ae0e9cb96bf28bbcf94d3043fa2ecb52a} 
 void Paint\+Canvas\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
 
+
+
+Handles the mouse press event. 
+
+Handles mouse press events.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The mouse press event.\\
+\hline
+{\em event} & The mouse event. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_paint_canvas_ad843bc948a8dcd99077733158333ee22}\index{PaintCanvas@{PaintCanvas}!mouseReleaseEvent@{mouseReleaseEvent}}
 \index{mouseReleaseEvent@{mouseReleaseEvent}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{mouseReleaseEvent()}{mouseReleaseEvent()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_ad843bc948a8dcd99077733158333ee22} 
 void Paint\+Canvas\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
 
+
+
+Handles the mouse release event. 
+
+Handles mouse release events.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The mouse release event.\\
+\hline
+{\em event} & The mouse event. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_paint_canvas_a4fc764a80e384c7344e6e4e11a819a2b}\index{PaintCanvas@{PaintCanvas}!paintEvent@{paintEvent}}
 \index{paintEvent@{paintEvent}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_a4fc764a80e384c7344e6e4e11a819a2b} 
 void Paint\+Canvas\+::paint\+Event (\begin{DoxyParamCaption}\item[{QPaint\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
 
+
+
+Handles the paint event. 
+
+Paints the widget.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The paint event. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_paint_canvas_ac66bc29284fedb97ea249fe63ee73f5e}\index{PaintCanvas@{PaintCanvas}!redo@{redo}}
 \index{redo@{redo}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{redo()}{redo()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_ac66bc29284fedb97ea249fe63ee73f5e} 
 void Paint\+Canvas\+::redo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Redoes the last undone action. 
 
 \Hypertarget{class_paint_canvas_ac0bde2a24649d268fddc80ce5b38ebae}\index{PaintCanvas@{PaintCanvas}!resizeEvent@{resizeEvent}}
 \index{resizeEvent@{resizeEvent}!PaintCanvas@{PaintCanvas}}
@@ -187,47 +318,126 @@ void Paint\+Canvas\+::redo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 {\footnotesize\ttfamily \label{class_paint_canvas_ac0bde2a24649d268fddc80ce5b38ebae} 
 void Paint\+Canvas\+::resize\+Event (\begin{DoxyParamCaption}\item[{QResize\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
 
+
+
+Handles the resize event. 
+
+Handles resize events.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The resize event. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_paint_canvas_a75af7a4deda70bd25665e05db7595553}\index{PaintCanvas@{PaintCanvas}!setFill@{setFill}}
 \index{setFill@{setFill}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{setFill()}{setFill()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_a75af7a4deda70bd25665e05db7595553} 
 void Paint\+Canvas\+::set\+Fill (\begin{DoxyParamCaption}\item[{bool}]{value}{}\end{DoxyParamCaption})}
 
+
+
+Sets the fill property. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The new fill value.\\
+\hline
+{\em value} & The new fill property. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_paint_canvas_a76682a37f2e1cb5e0465c19af02d6e7b}\index{PaintCanvas@{PaintCanvas}!setFillColor@{setFillColor}}
 \index{setFillColor@{setFillColor}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{setFillColor()}{setFillColor()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_a76682a37f2e1cb5e0465c19af02d6e7b} 
 void Paint\+Canvas\+::set\+Fill\+Color (\begin{DoxyParamCaption}\item[{const QColor \&}]{value}{}\end{DoxyParamCaption})}
 
+
+
+Sets the fill color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The new fill color. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_paint_canvas_aada5e03ad533a0cb93bcd01a119a48d4}\index{PaintCanvas@{PaintCanvas}!setImage@{setImage}}
 \index{setImage@{setImage}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{setImage()}{setImage()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_aada5e03ad533a0cb93bcd01a119a48d4} 
-void Paint\+Canvas\+::set\+Image (\begin{DoxyParamCaption}\item[{const QImage \&}]{value}{}\end{DoxyParamCaption})}
+void Paint\+Canvas\+::set\+Image (\begin{DoxyParamCaption}\item[{const QImage \&}]{new\+Image}{}\end{DoxyParamCaption})}
 
+
+
+Sets the current image. 
+
+Sets the image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The new image.\\
+\hline
+{\em new\+Image} & The new image. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_paint_canvas_a195efbfb2a813e4a02ea45cb0ae25577}\index{PaintCanvas@{PaintCanvas}!setPenColor@{setPenColor}}
 \index{setPenColor@{setPenColor}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{setPenColor()}{setPenColor()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_a195efbfb2a813e4a02ea45cb0ae25577} 
 void Paint\+Canvas\+::set\+Pen\+Color (\begin{DoxyParamCaption}\item[{const QColor \&}]{value}{}\end{DoxyParamCaption})}
 
+
+
+Sets the pen color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The new pen color. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_paint_canvas_ae7abaac60fed8882b06f8c73c5c22caa}\index{PaintCanvas@{PaintCanvas}!setPenWidth@{setPenWidth}}
 \index{setPenWidth@{setPenWidth}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{setPenWidth()}{setPenWidth()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_ae7abaac60fed8882b06f8c73c5c22caa} 
 void Paint\+Canvas\+::set\+Pen\+Width (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})}
 
+
+
+Sets the pen width. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The new pen width. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_paint_canvas_aa31056e4ad3c29be408a6eca504c3394}\index{PaintCanvas@{PaintCanvas}!setTool@{setTool}}
 \index{setTool@{setTool}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{setTool()}{setTool()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_aa31056e4ad3c29be408a6eca504c3394} 
 void Paint\+Canvas\+::set\+Tool (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_paint_canvas_a88dda947383b95ef7d5380dce4cf6a73}{Tool\+Type}} \&}]{value}{}\end{DoxyParamCaption})}
 
+
+
+Sets the current tool. 
+
+Sets the tool type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The new tool to set.\\
+\hline
+{\em value} & The new tool type. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_paint_canvas_abcbc8d43decc8745caf7774be208cee3}\index{PaintCanvas@{PaintCanvas}!undo@{undo}}
 \index{undo@{undo}!PaintCanvas@{PaintCanvas}}
 \doxysubsubsection{\texorpdfstring{undo()}{undo()}}
 {\footnotesize\ttfamily \label{class_paint_canvas_abcbc8d43decc8745caf7774be208cee3} 
 void Paint\+Canvas\+::undo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Undoes the last action. 
 
 
 

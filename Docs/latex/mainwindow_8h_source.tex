@@ -13,7 +13,7 @@
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{copypaste_8h}{copypaste.h}}"{}}}
 \DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{redoundo_8h}{redoundo.h}}"{}}}
 \DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QDropEvent>}}
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include<QMenu>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QMenu>}}
 \DoxyCodeLine{00013\ }
 \DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{filehandler_8h}{FileHandler.h}}"{}}\ \textcolor{comment}{//\ Include\ FileHandler}}
 \DoxyCodeLine{00015\ }
@@ -21,52 +21,54 @@
 \DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}};}
 \DoxyCodeLine{00018\ \}}
 \DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
-\DoxyCodeLine{00021\ \{}
-\DoxyCodeLine{00022\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aa4907b0251d305659e403c62921ef331}{createMenus}}();}
-\DoxyCodeLine{00027\ \ \ \ \ QMenu\ *\mbox{\hyperlink{class_main_window_a426da48f6e2f865b07a28533c07c4f7a}{fileMenu}};}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \textcolor{keyword}{private}\ slots:}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ penWidthChanged(\textcolor{keywordtype}{int}\ width);}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ changePenColor();}
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ changeFillColor();}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ changeFillProperty();}
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ saveState();\ \textcolor{comment}{//\ Add\ this\ line}}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/sf\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ dragEnterEvent(QDragEnterEvent*);}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ dropEvent(QDropEvent*);}
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/sf\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ openFile();}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ saveFile();}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ closeFile();}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_actionProgrammeurs\_triggered();}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1_main_window}{Ui::MainWindow}}\ *ui;}
-\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_paint_canvas}{PaintCanvas}}\ *\ canvas;}
-\DoxyCodeLine{00053\ \ \ \ \ QPushButton\ *\ penColorButton;}
-\DoxyCodeLine{00054\ \ \ \ \ QPushButton\ *\ fillColorButton;}
-\DoxyCodeLine{00055\ \ \ \ \ QCheckBox\ *\ fillCheckBox;}
-\DoxyCodeLine{00056\ \ \ \ \ QTextEdit\ *textEdit;}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_copy_paste}{CopyPaste}}\ *copyPaste;}
-\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_redo_undo}{RedoUndo}}\ *redoUndo;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aa4907b0251d305659e403c62921ef331}{createMenus}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00042\ \ \ \ \ QMenu\ *\mbox{\hyperlink{class_main_window_a426da48f6e2f865b07a28533c07c4f7a}{fileMenu}};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ penWidthChanged(\textcolor{keywordtype}{int}\ width);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ changePenColor();}
 \DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_file_handler}{FileHandler}}\ fileHandler;\ \textcolor{comment}{//\ Declare\ FileHandler}}
-\DoxyCodeLine{00062\ \};}
-\DoxyCodeLine{00063\ }
-\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ changeFillColor();}
 \DoxyCodeLine{00065\ }
-\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ changeFillProperty();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ saveState();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ dragEnterEvent(QDragEnterEvent*\ event);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ dropEvent(QDropEvent*\ event);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ openFile();}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ saveFile();}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ closeFile();}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_actionProgrammeurs\_triggered();}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1_main_window}{Ui::MainWindow}}\ *ui;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{class_paint_canvas}{PaintCanvas}}\ *canvas;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00111\ \ \ \ \ QPushButton\ *penColorButton;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00112\ \ \ \ \ QPushButton\ *fillColorButton;\ \ \ \ \ \ }
+\DoxyCodeLine{00113\ \ \ \ \ QCheckBox\ *fillCheckBox;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00114\ \ \ \ \ QTextEdit\ *textEdit;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{class_copy_paste}{CopyPaste}}\ *copyPaste;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00117\ \ \ \ \ \mbox{\hyperlink{class_redo_undo}{RedoUndo}}\ *redoUndo;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{class_file_handler}{FileHandler}}\ fileHandler;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00120\ \};}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
 
 \end{DoxyCode}
