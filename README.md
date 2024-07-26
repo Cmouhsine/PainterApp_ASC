@@ -29,9 +29,7 @@ Version de Qt : 6.15.2
 - Frontend :
   - Qt C++
   - Qt Creator
-- Backend :
-  - C++
-  - Qt Creator
+
 ```
 main
 ├─  Docs (doxygen)
@@ -54,7 +52,7 @@ main
 2- Revue de l'application 1 
 ![APP](screenshot/PainterAPP.png)
 3- Revue de l'application  2
-![APP2](screenshot/first.png)
+![APPL](screenshot/first.png)
 4- menu bar fichiers  
 ![MENU](screenshot/menu.png)
 5- Save file  
@@ -83,6 +81,6 @@ Projet sur QT et C++ -  créé par :
 - [Chrinbou]
 
 ### Soumis à :
-- M. Dennis Reant  
+- M. Denis Reant 
   Tous droits réservés © 2024 - Datascientest
 
