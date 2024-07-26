@@ -35,7 +35,14 @@ Version de Qt : 6.15.2
 master
 ├─  Docs (doxygen)
 ├─  PainterAPP
-├─  UML (Diagrammes UML)
+├─  screenshot
+├─  ExecutableWindows
+├─  Installer
+├─  PainterAPP
+├─  UML.png
+├─  PainterAPP.png
+├─  PainterAPP UML.pdf
+├─  Doxyfile
 ├─  README.md
 └─  .gitignore
 
@@ -43,8 +50,24 @@ master
 ### Aperçu Rapide
 1- Classe  Diagram
 ![UML](UML.png)
-2- Revue de l'application  
-![APP](PainterAPP.png)
+2- Revue de l'application 1 
+![APP](screenshot/PainterAPP.png)
+3- Revue de l'application  2
+![APP](screenshot/firste page app.png)
+4- menu bar fichiers  
+![APP](screenshot/menubarrefichier.png)
+5- Open file option  
+![APP](screenshot/Open file.png)
+6- Save file  
+![APP](screenshot/save file.png)
+7- Pen Color  
+![APP](screenshot/pen color.png)
+7- fill color  
+![APP](screenshot/fill color.png)
+8- free draw  
+![APP](screenshot/Draw in canvas.png)
+9- about  
+![APP](screenshot/about.png)
 
 ### Comment Exécuter le Projet
 1. Téléchargez Qt & Qt Creator depuis [ici](https://www.qt.io/download)
