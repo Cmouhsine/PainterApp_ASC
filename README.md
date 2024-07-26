@@ -32,6 +32,7 @@ Version de Qt : 6.15.2
 - Backend :
   - C++
   - Qt Creator
+
 master
 ├─  Docs (doxygen)
 ├─  PainterAPP
@@ -53,21 +54,21 @@ master
 2- Revue de l'application 1 
 ![APP](screenshot/PainterAPP.png)
 3- Revue de l'application  2
-![APP](screenshot/firste page app.png)
+![APP2](screenshot/firste page app.png)
 4- menu bar fichiers  
-![APP](screenshot/menubarrefichier.png)
+![MENU](screenshot/menubarrefichier.png)
 5- Open file option  
-![APP](screenshot/Open file.png)
+![open](screenshot/Open file.png)
 6- Save file  
-![APP](screenshot/save file.png)
+![save](screenshot/save file.png)
 7- Pen Color  
-![APP](screenshot/pen color.png)
+![pen](screenshot/pen color.png)
 7- fill color  
-![APP](screenshot/fill color.png)
+![fill](screenshot/fill color.png)
 8- free draw  
-![APP](screenshot/Draw in canvas.png)
+![free](screenshot/Draw in canvas.png)
 9- about  
-![APP](screenshot/about.png)
+![about](screenshot/about.png)
 
 ### Comment Exécuter le Projet
 1. Téléchargez Qt & Qt Creator depuis [ici](https://www.qt.io/download)
