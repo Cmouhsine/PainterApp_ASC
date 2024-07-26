@@ -1,72 +1,66 @@
-# IRO Paint - Paint Program
+# PainterAPP - Programme de Peinture
 
-## Table of contents:
+## Table des matières :
 - [Introduction](#introduction)
-- [Project Features](#project-features)
-- [Project Structure](#project-structure)
-- [Quick Preview](#quick-preview)
-- [Examples](#examples)
-- [How to Run The Project](#run-the-project)
-- [Team](#team)
+- [Fonctionnalités du Projet](#fonctionnalités-du-projet)
+- [Structure du Projet](#structure-du-projet)
+- [Aperçu Rapide](#aperçu-rapide)
+- [Exemples](#exemples)
+- [Comment Exécuter le Projet](#comment-exécuter-le-projet)
+- [Équipe](#équipe)
 
 ### Introduction
-Qt C++ Desktop application Paint program that allows user to draw basic shapes like Rectangles, lines, circles and some file manager options.
+Application de bureau Qt C++ permettant à l'utilisateur de dessiner des formes de base comme des rectangles, des lignes, des cercles et quelques options de gestion de fichiers.
 
-### Project Features
-- Draw Shapes (Rectangles, Lines, Circles, Free Drawing)
-- Color Picker (Choose color from the color wheel)
-- Fill Shapes (Fill shapes with color)
-- Stroke Shapes (Change stroke width & color)
-- Save as PNG (Save painting as PNG file)
-- Save your work (Save painting file)
-- Load your work (Load painting file)
-- Undo/Redo (Undo/Redo your last actions)
+### Fonctionnalités du Projet
+- Dessiner des formes (Rectangles, Lignes, Cercles, Dessin Libre)
+- Sélecteur de couleur (Choisir une couleur à partir de la roue chromatique)
+- Remplir des formes (Remplir les formes avec de la couleur)
+- Tracer des formes (Changer la largeur et la couleur du trait)
+- Enregistrer le fichier
+- Sauvegarder votre travail (Enregistrer le fichier de peinture)
+- Charger votre travail (Charger le fichier de peinture)
+- Annuler/Rétablir (Annuler/Rétablir vos dernières actions)
 
-### Project Structure
+### Structure du Projet
 
-The project is built using:
-Qt Version: 6.15.2
-- Frontend:
+Le projet est construit en utilisant :
+Version de Qt : 6.15.2
+- Frontend :
   - Qt C++
   - Qt Creator
-- Backend:
+- Backend :
   - C++
   - Qt Creator
-
-```
 master
 ├─  Docs (doxygen)
 ├─  PainterAPP
-├─  UML (UML Diagrams)
-├─  README.md   
+├─  UML (Diagrammes UML)
+├─  README.md
 └─  .gitignore
-```
-
-### Quick Preview
-1- Application Review
- ![UML](UML.png)
-2- Application Review
- ![APP](PainterAPP.png)
 
 
-### How to Run The Project
-1. Download Qt & Qt Creator from [here](https://www.qt.io/download)
-1. Clone the repository
-2. Open the project file in Qt Creator (PaintFigure.pro)
-3. Build the project
-4. Run the project
+### Aperçu Rapide
+1- Classe  Diagram
+![UML](UML.png)
+2- Revue de l'application  
+![APP](PainterAPP.png)
 
-As simple as that!
+### Comment Exécuter le Projet
+1. Téléchargez Qt & Qt Creator depuis [ici](https://www.qt.io/download)
+2. Clonez le dépôt
+3. Ouvrez le fichier du projet dans Qt Creator
+4. Construisez le projet
+5. Exécutez le projet
 
-
-### Team
-Project on QT and C++ - Data Structures class project created by:
+### Équipe
+Projet sur QT et C++ - Projet de la classe de structures de données créé par :
 
 - [Soufiani]
 - [Djamel]
 - [Chrinbou]
 
+### Soumis à :
+- M. Dennis Reant  
+  Tous droits réservés © 2024 - Datascientest
 
-### Submitted to:
-- Mr.Dennis Reant 
-  All rights reserved © 2024 - Datascientest
