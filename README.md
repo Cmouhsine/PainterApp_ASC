@@ -54,17 +54,17 @@ master
 2- Revue de l'application 1 
 ![APP](screenshot/PainterAPP.png)
 3- Revue de l'application  2
-![APP2](screenshot/firste page app.png)
+![APP2](screenshot/first.png)
 4- menu bar fichiers  
-![MENU](screenshot/menubarrefichier.png)
+![MENU](screenshot/menu.png)
 5- Save file  
-![save](screenshot/save file.png)
+![save](screenshot/save.png)
 6- Pen Color  
-![pen](screenshot/pen color.png)
+![pen](screenshot/pen.png)
 7- fill color  
-![fill](screenshot/fill color.png)
+![fill](screenshot/fill.png)
 8- free draw  
-![free](screenshot/Draw in canvas.png)
+![free](screenshot/draw.png)
 9- about  
 ![about](screenshot/about.png)
 
