@@ -57,17 +57,15 @@ master
 ![APP2](screenshot/firste page app.png)
 4- menu bar fichiers  
 ![MENU](screenshot/menubarrefichier.png)
-5- Open file option  
-![open](screenshot/Open file.png)
-6- Save file  
+5- Save file  
 ![save](screenshot/save file.png)
-7- Pen Color  
+6- Pen Color  
 ![pen](screenshot/pen color.png)
-8- fill color  
+7- fill color  
 ![fill](screenshot/fill color.png)
-9- free draw  
+8- free draw  
 ![free](screenshot/Draw in canvas.png)
-10- about  
+9- about  
 ![about](screenshot/about.png)
 
 ### Comment Exécuter le Projet
