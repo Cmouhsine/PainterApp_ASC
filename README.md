@@ -40,6 +40,7 @@ main
 ├─  ExecutableWindows
 ├─  Installer
 ├─  PainterAPP
+├─  document_technique.pdf
 ├─  UML.png
 ├─  PainterAPP.png
 ├─  PainterAPP UML.pdf
