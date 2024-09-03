@@ -1,86 +1,81 @@
-# PainterAPP - Programme de Peinture
+# ToDoListApp - Task Management Program
 
-## Table des matières :
+## Table of Contents:
 - [Introduction](#introduction)
-- [Fonctionnalités du Projet](#fonctionnalités-du-projet)
-- [Structure du Projet](#structure-du-projet)
-- [Aperçu Rapide](#aperçu-rapide)
-- [Exemples](#exemples)
-- [Comment Exécuter le Projet](#comment-exécuter-le-projet)
-- [Équipe](#équipe)
+- [Project Features](#project-features)
+- [Project Structure](#project-structure)
+- [Quick Overview](#quick-overview)
+- [How to Run the Project](#how-to-run-the-project)
+- [Team](#team)
 
 ### Introduction
-Application de bureau Qt C++ permettant à l'utilisateur de dessiner des formes de base comme des rectangles, des lignes, des cercles et quelques options de gestion de fichiers.
+This is a Qt C++ desktop application that allows users to manage tasks effectively. Users can create, edit, delete tasks, and change the app parametres based on many options.
 
-### Fonctionnalités du Projet
-- Dessiner des formes (Rectangles, Lignes, Cercles, Dessin Libre)
-- Sélecteur de couleur (Choisir une couleur à partir de la roue chromatique)
-- Remplir des formes (Remplir les formes avec de la couleur)
-- Tracer des formes (Changer la largeur et la couleur du trait)
-- Enregistrer le fichier
-- Sauvegarder votre travail (Enregistrer le fichier de peinture)
-- Charger votre travail (Charger le fichier de peinture)
-- Annuler/Rétablir (Annuler/Rétablir vos dernières actions)
+### Project Features
+- Create tasks (Add new tasks with a title and description)
+- Edit tasks (Modify the content of existing tasks)
+- Delete tasks (Remove tasks from the list)
+- Change Theme "Dark Mode"
+- Change Font size
+- Change the Maximum of number of tasks 
+- Delete Done Tasks
 
-### Structure du Projet
 
-Le projet est construit en utilisant :
-Version de Qt : 6.15.2
-- Frontend :
-  - Qt C++
+
+### Project Structure
+
+The project is built using:
+Qt Version: 6.7.2
+- Frontend:
+  - QML
   - Qt Creator
+- Backend:
 
-```
-main
-├─  Docs (doxygen)
-├─  PainterAPP
-├─  screenshot
-├─  ExecutableWindows
-├─  Installer
-├─  PainterAPP
-├─  document_technique.pdf
-├─  UML.png
-├─  PainterAPP.png
-├─  PainterAPP UML.pdf
-├─  Doxyfile
-├─  README.md
-└─  .gitignore
-```
-### Aperçu Rapide
-1- Classe  Diagram
+
+### Quick Overview
+1- Class Diagram  
 ![UML](UML.png)
-2- Revue de l'application 1 
-![APP](screenshot/PainterAPP.png)
-3- Revue de l'application  2
-![APPL](screenshot/first.png)
-4- menu bar fichiers  
-![MENU](screenshot/menu.png)
-5- Save file  
-![save](screenshot/save.png)
-6- Pen Color  
-![pen](screenshot/pen.png)
-7- fill color  
-![fill](screenshot/fill.png)
-8- free draw  
-![free](screenshot/draw.png)
-9- about  
-![about](screenshot/about.png)
+2- Application Review 1  
 
-### Comment Exécuter le Projet
-1. Téléchargez Qt & Qt Creator depuis [ici](https://www.qt.io/download)
-2. Clonez le dépôt
-3. Ouvrez le fichier du projet dans Qt Creator
-4. Construisez le projet
-5. Exécutez le projet
+3- Application Review 2  
 
-### Équipe
-Projet sur QT et C++ -  créé par :
+4- Menu Bar  
 
-- [Soufiani]
-- [Djamel]
-- [Chrinbou]
+5- Save File  
 
-### Soumis à :
-- M. Denis Reant 
-  Tous droits réservés © 2024 - Datascientest
+6- Task Details  
 
+7- Task Priority  
+
+8- Task Categories  
+
+9- About  
+
+
+### How to Run the Project
+#### Option 1: Run the Application
+1. **Clone the repository: **
+    git clone git@github.com:laurentdjin/ToDoListApp.git
+2. Navigate to the Installer directory
+3. Execute the installer to install the ToDoListApp on your system
+4. installation steps
+4. Launch the application
+#### Option 2: Modify the Application
+1.Download Qt & Qt Creator
+2.Clone the repository.
+3.Open Qt Creator, and then open the .pro project file located in the cloned repository.
+4.Use Qt Creator to build the project.
+5.Run the project.
+    
+
+### Team
+This QT and C++ project was created by:
+
+- [Laurent]
+- [Bryan]
+- [Noémie]
+- [Mouhsine]
+
+### Submitted to:
+- Mr. Noah  
+  All rights reserved © 2024 - Datascientest
