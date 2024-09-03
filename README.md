@@ -34,9 +34,9 @@ Qt Version: 6.7.2
 
 ### Quick Overview
 1- Class Diagram  
-![UML](UML.png)
-2- Application Review 1  
-
+![UML](screen/ClassDiagram.png)
+2- AUse Case Diagram  
+![USECASE](screen/UseCase.png)
 3- Application Review 2  
 
 4- Menu Bar  
